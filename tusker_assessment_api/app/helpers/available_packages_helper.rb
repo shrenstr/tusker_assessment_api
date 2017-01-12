@@ -3,7 +3,6 @@ module AvailablePackagesHelper
 
   def get_available_packages()
     result = Net::HTTP.get(URI.parse(AVAILABLE_PACKAGES_API))
-    binding.pry
     json = JSON.parse(result)
   end
 end
