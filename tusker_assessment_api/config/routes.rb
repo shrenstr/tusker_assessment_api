@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :available_packages, only: [:index]
 
   root 'prospects#index'
-  get  '/prospects/next_packages', to: 'prospects#next_packages'
-  #get '/', to: 'legacy_quotes#save', as: :save_quote
+  get '/prospects/next_packages', to: 'prospects#next_packages'
+  get '/available_packages/cities', to: 'available_packages#cities'
 end
