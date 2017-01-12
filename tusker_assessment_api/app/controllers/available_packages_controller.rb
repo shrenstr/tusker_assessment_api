@@ -1,5 +1,5 @@
 class AvailablePackagesController < ApplicationController
-  include AvailablePackagesHelper
+  include SourceApiHelper
 
   def index
     available_packages = get_available_packages()
